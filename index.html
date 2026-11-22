@@ -41,6 +41,8 @@ footer{background:var(--green);color:var(--paper)}
 address{font-style:normal}
 @media(max-width:650px){.grid{grid-template-columns:1fr}header .wrap{gap:.5rem}.wrap{width:calc(100% - 2rem)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.events-calendar{display:block;width:100%;height:36rem;margin-top:1rem;border:1px solid #c9c9b9;border-radius:.25rem;background:white}
+@media(max-width:650px){.events-calendar{height:29rem}#events .panel{padding-inline:.75rem}}
 </style>
 </head>
 <body id="top">
@@ -64,7 +66,9 @@ address{font-style:normal}
         <li><time datetime="11:00">11:00 am</time> | Sunday Morning Worship</li>
       </ul>
       <h3>Special events</h3>
-      <p>Check back for upcoming events. For schedule changes or event details, <a href="#contact">contact the church office</a>.</p>
+      <iframe class="events-calendar" title="Jordan Memorial Baptist Church events calendar" src="https://calendar.google.com/calendar/embed?src=jordanmemorialgwdsc%40gmail.com&amp;ctz=America%2FNew_York" loading="lazy"></iframe>
+      <p><a href="https://calendar.google.com/calendar/embed?src=jordanmemorialgwdsc%40gmail.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener">Open the events calendar in a new tab</a></p>
+      <p>For schedule changes or event details, <a href="#contact">contact the church office</a>.</p>
     </div>
   </div>
 </section>
